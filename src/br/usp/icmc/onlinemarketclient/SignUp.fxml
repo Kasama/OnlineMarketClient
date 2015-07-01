@@ -21,60 +21,60 @@
     <HBox prefHeight="30.0" prefWidth="368.0">
       <children>
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
-        <TextField alignment="CENTER" prefWidth="319.0" promptText="Username" HBox.hgrow="ALWAYS" />
+        <TextField fx:id="username" alignment="CENTER" prefWidth="319.0" promptText="Username" HBox.hgrow="ALWAYS" />
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
       </children>
     </HBox>
     <HBox prefHeight="30.0" prefWidth="368.0">
       <children>
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
-        <TextField alignment="CENTER" prefWidth="319.0" promptText="Name" HBox.hgrow="ALWAYS" />
+        <TextField fx:id="name" alignment="CENTER" prefWidth="319.0" promptText="Name" HBox.hgrow="ALWAYS" />
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
       </children>
     </HBox>
     <HBox alignment="CENTER" fillHeight="true" prefHeight="30.0" prefWidth="368.0">
       <children>
         <Separator prefHeight="22.0" prefWidth="28.0" visible="false" HBox.hgrow="ALWAYS" />
-        <PasswordField prefWidth="311.0" promptText="Password" HBox.hgrow="ALWAYS" />
+        <PasswordField fx:id="password" prefWidth="311.0" promptText="Password" HBox.hgrow="ALWAYS" />
         <Separator prefHeight="22.0" prefWidth="28.0" visible="false" HBox.hgrow="ALWAYS" />
       </children>
     </HBox>
     <HBox alignment="CENTER" fillHeight="true" prefHeight="30.0" prefWidth="368.0">
       <children>
         <Separator prefHeight="22.0" prefWidth="28.0" visible="false" HBox.hgrow="ALWAYS" />
-        <PasswordField prefWidth="311.0" promptText="Re-enter password" HBox.hgrow="ALWAYS" />
+        <PasswordField fx:id="passwordAuthenticate" prefWidth="311.0" promptText="Re-enter password" HBox.hgrow="ALWAYS" />
         <Separator prefHeight="22.0" prefWidth="28.0" visible="false" HBox.hgrow="ALWAYS" />
       </children>
     </HBox>
     <HBox alignment="CENTER" prefHeight="30.0" prefWidth="368.0">
       <children>
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
-        <TextField prefWidth="319.0" promptText="Phone number" HBox.hgrow="ALWAYS" />
+        <TextField fx:id="phone" prefWidth="319.0" promptText="Phone number" HBox.hgrow="ALWAYS" />
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
       </children>
     </HBox>
     <HBox alignment="CENTER" prefHeight="30.0" prefWidth="368.0">
       <children>
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
-        <TextField prefWidth="319.0" promptText="Email" HBox.hgrow="ALWAYS" />
+        <TextField fx:id="email" prefWidth="319.0" promptText="Email" HBox.hgrow="ALWAYS" />
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
       </children>
     </HBox>
     <HBox alignment="CENTER" prefHeight="30.0" prefWidth="368.0">
       <children>
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
-        <TextField prefWidth="319.0" promptText="Address" HBox.hgrow="ALWAYS" />
+        <TextField fx:id="address" prefWidth="319.0" promptText="Address" HBox.hgrow="ALWAYS" />
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
       </children>
     </HBox>
     <HBox alignment="CENTER" prefHeight="54.999900000002526" prefWidth="368.0" visible="true" VBox.vgrow="ALWAYS">
       <children>
-        <RadioButton mnemonicParsing="false" prefHeight="48.0" prefWidth="123.0" text="Customer" textAlignment="LEFT" HBox.hgrow="ALWAYS">
+        <RadioButton fx:id="customerButton" mnemonicParsing="false" prefHeight="48.0" prefWidth="123.0" text="Customer" textAlignment="LEFT" HBox.hgrow="ALWAYS">
           <HBox.margin>
             <Insets bottom="5.0" left="70.0" />
           </HBox.margin>
         </RadioButton>
-        <RadioButton mnemonicParsing="false" prefHeight="48.0" prefWidth="123.0" text="Provider" HBox.hgrow="ALWAYS">
+        <RadioButton fx:id="providerButton" mnemonicParsing="false" prefHeight="48.0" prefWidth="123.0" text="Provider" HBox.hgrow="ALWAYS">
           <HBox.margin>
             <Insets bottom="5.0" />
           </HBox.margin>

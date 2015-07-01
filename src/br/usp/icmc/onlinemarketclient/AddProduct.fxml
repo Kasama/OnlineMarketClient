@@ -27,7 +27,7 @@
     <HBox prefHeight="30.0" prefWidth="368.0">
       <children>
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
-        <TextField alignment="CENTER" prefWidth="319.0" promptText="Name" HBox.hgrow="ALWAYS" />
+        <TextField fx:id="name" alignment="CENTER" prefWidth="319.0" promptText="Name" HBox.hgrow="ALWAYS" />
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS">
           <HBox.margin>
             <Insets />
@@ -38,28 +38,28 @@
     <HBox prefHeight="30.0" prefWidth="368.0">
       <children>
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
-        <TextField alignment="CENTER" prefWidth="319.0" promptText="ID" HBox.hgrow="ALWAYS" />
+        <TextField fx:id="id" alignment="CENTER" prefWidth="319.0" promptText="ID" HBox.hgrow="ALWAYS" />
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
       </children>
     </HBox>
     <HBox prefHeight="30.0" prefWidth="368.0">
       <children>
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
-        <TextField alignment="CENTER" prefWidth="319.0" promptText="Price" HBox.hgrow="ALWAYS" />
+        <TextField fx:id="price" alignment="CENTER" prefWidth="319.0" promptText="Price" HBox.hgrow="ALWAYS" />
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
       </children>
     </HBox>
     <HBox prefHeight="30.0" prefWidth="368.0">
       <children>
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
-        <TextField alignment="CENTER" prefWidth="319.0" promptText="Best before" HBox.hgrow="ALWAYS" />
+        <TextField fx:id="bestBefore" alignment="CENTER" prefWidth="319.0" promptText="Best before" HBox.hgrow="ALWAYS" />
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
       </children>
     </HBox>
     <HBox prefHeight="30.0" prefWidth="368.0">
       <children>
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
-        <TextField alignment="CENTER" prefWidth="319.0" promptText="Amount" HBox.hgrow="ALWAYS">
+        <TextField fx:id="amount" alignment="CENTER" prefWidth="319.0" promptText="Amount" HBox.hgrow="ALWAYS">
           <HBox.margin>
             <Insets />
           </HBox.margin>

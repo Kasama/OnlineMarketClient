@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -19,7 +20,7 @@ public class LoginController {
     @FXML
     private TextField username;
     @FXML
-    private TextField password;
+    private PasswordField password;
     @FXML
     private TextField port;
     @FXML
@@ -65,7 +66,7 @@ public class LoginController {
     }
 
     private void switchToOnlineMarket(Socket s) {
-        FXMLLoader loader = new FXMLLoader((getClass().getResource("SignUp.fxml")));
+        FXMLLoader loader = new FXMLLoader((getClass().getResource("OnlineMarket.fxml")));
 
         Parent rt = null;
         try {
