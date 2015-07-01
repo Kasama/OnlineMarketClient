@@ -7,14 +7,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" prefHeight="245.99997792968497" prefWidth="368.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.usp.icmc.onlinemarketclient.LoginController">
+<VBox alignment="CENTER" prefHeight="231.99997792968497" prefWidth="368.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.usp.icmc.onlinemarketclient.LoginController">
   <children>
     <Label alignment="CENTER" graphicTextGap="6.0" prefHeight="32.0" prefWidth="354.0" text="Please, sign in." textAlignment="CENTER" VBox.vgrow="ALWAYS">
       <font>
-        <Font name="System Bold" size="30.0" />
+        <Font size="42.0" />
       </font>
       <VBox.margin>
-        <Insets bottom="30.0" left="8.0" right="8.0" top="20.0" />
+        <Insets bottom="25.0" left="8.0" right="8.0" top="20.0" />
       </VBox.margin>
     </Label>
     <HBox prefHeight="30.0" prefWidth="368.0">
@@ -61,16 +61,17 @@
         <Insets left="10.0" />
       </VBox.margin>
     </HBox>
-    <HBox prefHeight="64.0" prefWidth="368.0000999999975" VBox.vgrow="ALWAYS">
+    <HBox alignment="BOTTOM_CENTER" prefHeight="64.0" prefWidth="368.0000999999975" VBox.vgrow="ALWAYS">
       <children>
-        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#signUp" prefHeight="30.0" prefWidth="124.9998779296875" text="Sign Up" HBox.hgrow="ALWAYS">
+        <Separator prefWidth="200.0" visible="false" HBox.hgrow="ALWAYS" />
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#signUp" prefHeight="30.0" prefWidth="82.0" text="Sign Up" HBox.hgrow="ALWAYS">
           <HBox.margin>
-            <Insets left="15.0" top="15.0" />
+            <Insets bottom="7.0" right="8.0" />
           </HBox.margin>
         </Button>
-        <Button alignment="CENTER" cancelButton="false" contentDisplay="CENTER" mnemonicParsing="false" onAction="#logIn" prefHeight="30.0" prefWidth="125.0" text="Log In" HBox.hgrow="ALWAYS">
+        <Button alignment="CENTER" cancelButton="false" contentDisplay="CENTER" mnemonicParsing="false" onAction="#logIn" prefHeight="30.0" prefWidth="82.0" text="Log In" HBox.hgrow="ALWAYS">
           <HBox.margin>
-            <Insets left="90.0" top="15.0" />
+            <Insets bottom="7.0" right="15.0" />
           </HBox.margin>
         </Button>
       </children>
