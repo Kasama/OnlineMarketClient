@@ -64,12 +64,12 @@
     <HBox alignment="BOTTOM_CENTER" prefHeight="64.0" prefWidth="368.0000999999975" VBox.vgrow="ALWAYS">
       <children>
         <Separator prefWidth="200.0" visible="false" HBox.hgrow="ALWAYS" />
-        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#signUp" prefHeight="30.0" prefWidth="82.0" text="Sign Up" HBox.hgrow="ALWAYS">
+        <Button fx:id="logIn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#signUp" prefHeight="30.0" prefWidth="82.0" text="Sign Up" HBox.hgrow="ALWAYS">
           <HBox.margin>
             <Insets bottom="7.0" right="8.0" />
           </HBox.margin>
         </Button>
-        <Button alignment="CENTER" cancelButton="false" contentDisplay="CENTER" mnemonicParsing="false" onAction="#logIn" prefHeight="30.0" prefWidth="82.0" text="Log In" HBox.hgrow="ALWAYS">
+        <Button alignment="CENTER" cancelButton="false" contentDisplay="CENTER" mnemonicParsing="false" onAction="#createConnetction" prefHeight="30.0" prefWidth="82.0" text="Log In" HBox.hgrow="ALWAYS">
           <HBox.margin>
             <Insets bottom="7.0" right="15.0" />
           </HBox.margin>

@@ -1,8 +1,13 @@
 package br.usp.icmc.onlinemarketclient;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 
 import java.io.IOException;
@@ -24,8 +29,9 @@ public class LoginController {
     @FXML
     private Button signUp;
 
-    PrintWriter out;
+    private PrintWriter out;
 
+    @FXML
     public void createConnetction() {
         Socket s = null;
         try {
@@ -40,10 +46,10 @@ public class LoginController {
             e.printStackTrace();
         }
 
-        logIn();
+        logIn(s);
     }
 
-    public void logIn() {
+    public void logIn(Socket s) {
         StringBuilder sb = new StringBuilder();
         sb.append("<");
         sb.append("login");
@@ -55,17 +61,40 @@ public class LoginController {
 
         PrintWriter p = new PrintWriter(out, true);
         p.write(sb.toString());
+        switchToOnlineMarket(s);
     }
 
-    public void signUp() {
+    private void switchToOnlineMarket(Socket s) {
+        FXMLLoader loader = new FXMLLoader((getClass().getResource("SignUp.fxml")));
 
-        //abre tela pra SignUp
+        Parent rt = null;
+        try {
+            rt = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        OnlineMarketController controller = loader.getController();
+        controller.setSocket(s);
 
-        //-==============-
-        //StringBuilder sb = new StringBuilder();
-        //sb.append("<");
-        //sb.append("newuser");
-        //sb.append("|");
+        Scene signUpScene = new Scene(rt);
+        Stage st = (Stage) signUp.getScene().getWindow();
+        st.setScene(signUpScene);
+        st.show();
+    }
+
+
+    @FXML
+    public void signUp(ActionEvent event) {
+
+
+
+        //abre dialog pra SignUp
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("<");
+        sb.append("newuser");
+        sb.append("|");
         //sb.append("");
+        //...
     }
 }
