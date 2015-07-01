@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="258.999977929685" prefWidth="413.0000999999975" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.usp.icmc.onlinemarketclient.AddProductController">
+  <children>
+    <Label alignment="CENTER" graphicTextGap="6.0" prefHeight="40.0" prefWidth="394.0" text="Enter product's information" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+      <font>
+        <Font name="System Bold" size="30.0" />
+      </font>
+      <VBox.margin>
+        <Insets bottom="30.0" left="8.0" right="8.0" top="20.0" />
+      </VBox.margin>
+    </Label>
+    <HBox prefHeight="30.0" prefWidth="368.0">
+      <children>
+        <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
+        <TextField prefWidth="319.0" promptText="Name" HBox.hgrow="ALWAYS" />
+        <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS">
+          <HBox.margin>
+            <Insets />
+          </HBox.margin>
+        </Separator>
+      </children>
+    </HBox>
+    <HBox prefHeight="30.0" prefWidth="368.0">
+      <children>
+        <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
+        <TextField prefWidth="319.0" promptText="ID" HBox.hgrow="ALWAYS" />
+        <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
+      </children>
+    </HBox>
+    <HBox prefHeight="30.0" prefWidth="368.0">
+      <children>
+        <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
+        <TextField prefWidth="319.0" promptText="Price" HBox.hgrow="ALWAYS" />
+        <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
+      </children>
+    </HBox>
+    <HBox prefHeight="30.0" prefWidth="368.0">
+      <children>
+        <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
+        <TextField prefWidth="319.0" promptText="Best before" HBox.hgrow="ALWAYS" />
+        <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
+      </children>
+    </HBox>
+    <HBox prefHeight="30.0" prefWidth="368.0">
+      <children>
+        <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
+        <TextField prefWidth="319.0" promptText="Amount" HBox.hgrow="ALWAYS" />
+        <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
+      </children>
+    </HBox>
+  </children>
+</VBox>
