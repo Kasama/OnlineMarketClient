@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="322.999977929685" prefWidth="470.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.usp.icmc.onlinemarketclient.SignUpController">
+<VBox prefHeight="322.999977929685" prefWidth="470.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" >
   <children>
     <HBox alignment="CENTER" prefHeight="77.0" prefWidth="481.0" VBox.vgrow="ALWAYS">
       <children>
@@ -57,6 +57,13 @@
       <children>
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
         <TextField fx:id="email" prefWidth="319.0" promptText="Email" HBox.hgrow="ALWAYS" />
+        <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
+      </children>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="30.0" prefWidth="368.0">
+      <children>
+        <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
+        <TextField fx:id="id" prefWidth="319.0" promptText="ID" HBox.hgrow="ALWAYS" />
         <Separator prefHeight="22.0" prefWidth="35.0" visible="false" HBox.hgrow="ALWAYS" />
       </children>
     </HBox>

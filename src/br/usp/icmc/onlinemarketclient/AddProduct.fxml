@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" prefHeight="268.999977929685" prefWidth="538.0001168945237" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.usp.icmc.onlinemarketclient.AddProductController">
+<VBox alignment="CENTER" prefHeight="268.999977929685" prefWidth="538.0001168945237" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" >
   <children>
     <HBox alignment="CENTER" prefHeight="86.0" prefWidth="539.0" VBox.vgrow="ALWAYS">
       <children>

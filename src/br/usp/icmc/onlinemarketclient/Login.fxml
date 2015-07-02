@@ -51,7 +51,8 @@
             <Insets left="25.0" />
           </HBox.margin>
         </Label>
-        <TextField id="username" fx:id="ip" prefHeight="22.0" prefWidth="136.0" promptText="" text="" HBox.hgrow="ALWAYS">
+        <TextField id="username" fx:id="ip" prefHeight="22.0" prefWidth="136.0" promptText="" text="localhost"
+                   HBox.hgrow="ALWAYS">
           <HBox.margin>
             <Insets right="31.0" />
           </HBox.margin>
@@ -69,7 +70,8 @@
             <Insets bottom="7.0" right="8.0" />
           </HBox.margin>
         </Button>
-        <Button fx:id="logIn" alignment="CENTER" cancelButton="false" contentDisplay="CENTER" mnemonicParsing="false" onAction="#createConnetction" prefHeight="30.0" prefWidth="82.0" text="Log In" HBox.hgrow="ALWAYS">
+        <Button fx:id="logIn" alignment="CENTER" cancelButton="false" contentDisplay="CENTER" mnemonicParsing="false"
+                onAction="#logIn" prefHeight="30.0" prefWidth="82.0" text="Log In" HBox.hgrow="ALWAYS">
           <HBox.margin>
             <Insets bottom="7.0" right="15.0" />
           </HBox.margin>
