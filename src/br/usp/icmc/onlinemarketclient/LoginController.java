@@ -85,14 +85,14 @@ public class LoginController {
 		);
 		Dialog<String[]> dialog = new SignUpController();
 		String[] s = dialog.showAndWait().orElse(null);
-		if (s != null) {
-			connection.println(connection.generateOutputString(s, "newuser"));
-			String str = connection.getMessageFromServer();
-			String[] resp = connection.parseServerResponse(str);
-			if (!Boolean.parseBoolean(resp[0])) {
-				new Alert(Alert.AlertType.WARNING, resp[1], ButtonType.OK)
-					.show();
-			}
+		if (s[0].equals(""))
+			return;
+		connection.println(connection.generateOutputString(s, "newuser"));
+		String str = connection.getMessageFromServer();
+		String[] resp = connection.parseServerResponse(str);
+		if (!Boolean.parseBoolean(resp[0])) {
+			new Alert(Alert.AlertType.WARNING, resp[1], ButtonType.OK)
+				.show();
 		}
 	}
 }
